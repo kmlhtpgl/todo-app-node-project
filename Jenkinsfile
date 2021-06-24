@@ -44,5 +44,8 @@ pipeline {
             echo 'Deleting all local images'
             sh 'docker image prune -af'
         }
+        success {
+            echo 'You did it. You are gonna be a good Devops'
+        }
     }
 }
