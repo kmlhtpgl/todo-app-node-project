@@ -9,10 +9,8 @@ pipeline {
             }
             steps{
                 withEnv(["HOME=${env.WORKSPACE}"]) {
-                    // sh 'apk add curl'
                     sh 'yarn install --production'
                     sh 'npm install'
-                    // sh 'curl ????
                 }
             }
         }
